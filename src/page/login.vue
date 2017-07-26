@@ -44,13 +44,10 @@
         let params = 'username=' + this.name + '&password=' + this.psw
 
         this.post(url,params,function (res) {
-          if(res.result === 1){
-            vm.$store.commit('isLogin', res.data[0])
+          alert(res)
+          vm.$store.commit('isLogin', res.data[0])
             alert('登陆成功！')
             router.push('index/fresh')
-          }else{
-            alert('用户名错误')
-          }
         })
       }
     }

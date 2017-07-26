@@ -1,6 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-let baseUrl = 'http://118.89.50.53:9091/photosharing/';
+let baseUrl = 'http://127.0.0.1:9091/photosharing/';
 
 module.exports = {
   build: {
